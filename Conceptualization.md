@@ -75,27 +75,27 @@
 | Actor | Last System |
 | --- | --- |
 | Description | 등록된 주변기기의 연결 상태를 백그라운드에서 지속적으로 감시 |
-1. Detect Disconnect Event
+2. Detect Disconnect Event
 
 | Actor | macOS System, Last System |
 | --- | --- |
 | Description | 시스템이 블루투스, USB, 충전 연결 해제 이벤트를 감지 |
-1. Save Last Location
+3. Save Last Location
 
 | Actor | Last System, Location Service |
 | --- | --- |
 | Description | 연결 종료 이벤트 발생 시 마지막 위치 정보와 Wi-Fi 정보를 저장 |
-1. View Device History
+4. View Device History
 
 | Actor | User |
 | --- | --- |
 | Description | 사용자가 저장된 주변기기 기록 및 이벤트 내역을 조회 |
-1. View Last Location
+5. View Last Location
 
 | Actor | User |
 | --- | --- |
 | Description | 사용자가 마지막으로 기록된 주변기기의 위치 정보를 확인 |
-1. Save System Log
+6. Save System Log
 
 | Actor | Last System, Local Database |
 | --- | --- |
@@ -112,35 +112,35 @@
 | Approach | 사용자가 블루투스 또는 USB 장치를 선택하여 등록 |
 | Dynamics | 앱 실행 후 기기를 등록할 경우 |
 | Goals | 사용자의 주변기기를 관리 가능한 상태로 등록 |
-1. Monitor Device Connection
+3. Monitor Device Connection
 
 | Purpose | 등록된 주변기기의 연결 상태를 지속적으로 확인하기 위함 |
 | --- | --- |
 | Approach | macOS 백그라운드 환경에서 연결 상태 이벤트를 모니터링 |
 | Dynamics | 시스템이 백그라운드에서 실행 중일 경우 |
 | Goals | 주변기기의 연결 및 해제 상태를 실시간으로 감시 |
-1. Detect Disconnect Event
+3. Detect Disconnect Event
 
 | Purpose | 주변기기의 연결 종료 순간을 감지하기 위함 |
 | --- | --- |
 | Approach | Bluetooth, USB, 충전 해제 이벤트를 시스템 이벤트 기반으로 감지 |
 | Dynamics | 주변기기의 연결이 해제될 경우 |
 | Goals | 분실 가능성이 있는 마지막 연결 종료 시점을 기록 |
-1. Save Last Location
+4. Save Last Location
 
 | Purpose | 마지막 연결 종료 위치를 저장하기 위함 |
 | --- | --- |
 | Approach | 위치 서비스 및 Wi-Fi 정보를 활용하여 현재 환경 정보를 기록 |
 | Dynamics | 연결 종료 이벤트 발생 시 |
 | Goals | 사용자가 마지막 사용 위치를 확인할 수 있도록 지원 |
-1. View Device History
+5. View Device History
 
 | Purpose | 사용자가 저장된 기록을 확인하기 위함 |
 | --- | --- |
 | Approach | 사용자 요청 시 저장된 이벤트 로그를 불러옴 |
 | Dynamics | 사용자가 기록 조회를 요청할 경우 |
 | Goals | 주변기기의 사용 기록 및 연결 종료 내역을 제공 |
-1. View Last Location
+6. View Last Location
 
 | Purpose | 사용자가 마지막 위치를 확인하기 위함 |
 | --- | --- |
@@ -165,25 +165,25 @@
 | --- | --- |
 | Example | 노트북 종료 후 충전기를 제거하는 경우 |
 | Consideration | 시스템 종료 직전 마지막 연결 상태 및 위치 정보를 저장하도록 설계 |
-1. 블루투스 연결 해제 신뢰성 문제
+2. 블루투스 연결 해제 신뢰성 문제
 
 | Problem | 블루투스 장치가 일시적으로 연결 해제될 수 있음 |
 | --- | --- |
 | Example | 일시적인 끊김, 절전 모드 |
 | Consideration | 단순 연결 해제만으로 분실 여부를 판단하지 않도록 설계 |
-1. 실내 위치 정확도 문제
+3. 실내 위치 정확도 문제
 
 | Problem | 실내 환경에서 GPS 정확도가 낮음 |
 | --- | --- |
 | Example | 건물 내부 위치 오차 발생 |
 | Consideration | Wi-Fi 정보(SSID, BSSID)를 함께 저장하여 위치 정확도 보완 |
-1. macOS 백그라운드 권한 제한
+4. macOS 백그라운드 권한 제한
 
 | Problem | macOS의 백그라운드 권한 및 시스템 접근 제한 |
 | --- | --- |
 | Example | Bluetooth 및 위치 권한 필요 |
 | Consideration | 사용자 권한 요청 및 안정적인 백그라운드 동작 고려 |
-1. Non-Functional Requirements (NFRs)
+5. Non-Functional Requirements (NFRs)
 
 | 안정성 | 시스템은 백그라운드 환경에서 안정적으로 동작해야 함 |
 | --- | --- |
