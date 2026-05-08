@@ -1,7 +1,7 @@
 # Conceptualization
 
 <p align="center">
-  <img src="images/logo.png" width="300">
+  <img src="images/logo.png" width="750">
 </p>
 
 | No | 22212058 |
