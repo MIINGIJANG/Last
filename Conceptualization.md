@@ -13,7 +13,7 @@
 
 # Revision history
 
-| Revision date | Version # | Eescription | Anthor |
+| Revision date | Version # | Description | Anthor |
 | --- | --- | --- | --- |
 |  |  |  |  |
 |  |  |  |  |
