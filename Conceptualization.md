@@ -1,6 +1,8 @@
 # Conceptualization
 
-![ChatGPT Image 2026년 5월 8일 오후 03_37_22.png](Conceptualization/ChatGPT_Image_2026%E1%84%82%E1%85%A7%E1%86%AB_5%E1%84%8B%E1%85%AF%E1%86%AF_8%E1%84%8B%E1%85%B5%E1%86%AF_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_03_37_22.png)
+<p align="center">
+  <img src="images/logo.png" width="300">
+</p>
 
 | No | 22212058 |
 | --- | --- |
@@ -39,7 +41,9 @@
 
  최근에는 유명 연예인인 에스파(aespa)의 멤버 닝닝 또한 AirPods을 분실한 경험을 공유하면서 많은 사용자들의 공감을 얻은 사례가 있었다. 이처럼 작은 주변기기의 분실은 일상 속에서 빈번하게 발생하지만, 사용자는 기기를 마지막으로 어디에서 사용했는지 정확히 기억하지 못하는 경우가 많다. 특히 소형 주변기기의 경우 노트북과 연결이 해제된 이후에는 위치를 확인하기 어렵기 때문에 사용자에게 불편함과 추가적인 비용 부담을 유발한다.
 
-![i1624537669.png](Conceptualization/i1624537669.png)
+<p align="center">
+  <img src="images/ningning.png" width="300">
+</p>
 
  현재 Apple의 “나의 찾기(Find My)” 서비스는 일부 인증된 기기에 대해서만 위치 추적 기능을 제공하고 있으며, 일반적인 USB 장치나 비인증 블루투스 주변기기, 충전기 등은 기존 시스템을 통해 추적하기 어렵다. 따라서 사용자는 주변기기를 어디에서 마지막으로 사용했는지 확인할 수 있는 수단이 부족한 상황이다.
 
@@ -53,7 +57,9 @@
 
 # 2. System context diagram
 
-![ChatGPT Image 2026년 5월 8일 오후 04_57_54.png](Conceptualization/02d1c8f7-912b-45a3-8a5b-0ca8e53e814d.png)
+<p align="center">
+  <img src="images/diagram.jpeg" width="85%">
+</p>
 
 ---
 
