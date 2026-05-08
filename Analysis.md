@@ -233,7 +233,7 @@ RELATED INFORMATION
 
 ---
 
-1. 마지막 위치 확인
+4. 마지막 위치 확인
 
 GENERAL CHARACTERISTICS
 
@@ -282,7 +282,7 @@ RELATED INFORMATION
 
 ---
 
-1. 연결 이벤트 감지
+5. 연결 이벤트 감지
 
 GENERAL CHARACTERISTICS
 
@@ -326,7 +326,7 @@ RELATED INFORMATION
 
 ---
 
-1. 마지막 위치 저장
+6. 마지막 위치 저장
 
 GENERAL CHARACTERISTICS
 
