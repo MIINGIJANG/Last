@@ -70,32 +70,32 @@
 | Actor | User |
 | --- | --- |
 | Description | 사용자가 블루투스 장치 또는 USB 장치를 시스템에 등록하고 관리 |
-1. Monitor Device Connection
+2. Monitor Device Connection
 
 | Actor | Last System |
 | --- | --- |
 | Description | 등록된 주변기기의 연결 상태를 백그라운드에서 지속적으로 감시 |
-2. Detect Disconnect Event
+3. Detect Disconnect Event
 
 | Actor | macOS System, Last System |
 | --- | --- |
 | Description | 시스템이 블루투스, USB, 충전 연결 해제 이벤트를 감지 |
-3. Save Last Location
+4. Save Last Location
 
 | Actor | Last System, Location Service |
 | --- | --- |
 | Description | 연결 종료 이벤트 발생 시 마지막 위치 정보와 Wi-Fi 정보를 저장 |
-4. View Device History
+5. View Device History
 
 | Actor | User |
 | --- | --- |
 | Description | 사용자가 저장된 주변기기 기록 및 이벤트 내역을 조회 |
-5. View Last Location
+6. View Last Location
 
 | Actor | User |
 | --- | --- |
 | Description | 사용자가 마지막으로 기록된 주변기기의 위치 정보를 확인 |
-6. Save System Log
+7. Save System Log
 
 | Actor | Last System, Local Database |
 | --- | --- |
@@ -112,7 +112,7 @@
 | Approach | 사용자가 블루투스 또는 USB 장치를 선택하여 등록 |
 | Dynamics | 앱 실행 후 기기를 등록할 경우 |
 | Goals | 사용자의 주변기기를 관리 가능한 상태로 등록 |
-3. Monitor Device Connection
+2. Monitor Device Connection
 
 | Purpose | 등록된 주변기기의 연결 상태를 지속적으로 확인하기 위함 |
 | --- | --- |
@@ -147,7 +147,7 @@
 | Approach | 저장된 위치 데이터를 지도 기반 인터페이스로 표시 |
 | Dynamics | 사용자가 특정 기기를 선택할 경우 |
 | Goals | 사용자가 주변기기를 보다 쉽게 찾을 수 있도록 지원 |
-1. Save System Log
+7. Save System Log
 
 | Purpose | 이벤트 및 위치 기록 정보를 저장하기 위함 |
 | --- | --- |
