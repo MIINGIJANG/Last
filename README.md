@@ -15,11 +15,14 @@
 
 | Revision date <img width="10%"> | Version # <img width="10%"> | Description <img width="10%"> | Anthor <img width="10%"> |
 | --- | --- | --- | --- |
-| <img height="50">  |  |  |  |
-| <img height="50"> |  |  |  |
-| <img height="50"> |  |  |  |
-| <img height="50"> |  |  |  |
-| <img height="50"> |  |  |  |
+| 2026년 6월 10일 수요일 <img height="50"> | v1.0 | MVVM + Flow + 트랜잭션 | 장민기 |
+| 2026년 6월 10일 수요일 <img height="50"> | v1.2 | FGS · 장치매칭 · POWER 분리 | 장민기 |
+| 2026년 6월 10일 수요일 <img height="50"> | v1.4 | 대시보드 개편 · BT 모니터링 | 장민기 |
+| 2026년 6월 13일 토요일 <img height="50"> | v2.0 | DSA 인덱스 · 패키지 구조 정리 | 장민기 |
+| 2026년 6월 13일 토요일 <img height="50"> | v2.0 | WAL · 부분 인덱스 · ANR 수정 | 장민기 |
+| 2026년 6월 13일 토요일 <img height="50"> | v2.0 | DB 캐시 테이블 · DSA/DB 최적화 | 장민기 |
+| 2026년 6월 15일 월요일 <img height="50"> | v2.0.2 | 설정·백업·구조 정리 | 장민기 |
+| 2026년 6월 15일 월요일 <img height="50"> | v2.0.3 | BT 추적 수정 · 파일명/패키지 최적화 · 데드코드 제거 | 장민기 |
 
 ---
 
@@ -283,37 +286,7 @@ cp keystore.properties.example keystore.properties
 
 ---
 
-## 9. 실기기 검증 체크리스트
-
-1. 앱 최초 실행 → 위치·Bluetooth·알림 권한 요청
-2. BT 기기 연결/해제 → **대시보드·연결 기록** 5초 이내 반영
-3. USB 연결/해제 → 등록 USB 장치 이벤트 기록
-4. 연결 해제 시 좌표·주소 저장 (위치 권한 허용 시)
-5. 대시보드 장치 클릭 → 지도 필터 / 재클릭 → 전체
-6. 마지막 위치 탭 복귀 → ANR 없음
-7. 장치 삭제 → 연결 기록·위치·로그·캐시 cascade 삭제
-8. 설정 → 위치·Bluetooth 토글 동작 확인
-9. v13 → v14 업그레이드 시 인덱스 추가 정상
-10. v9 미만 DB → 재설치 필요 (`adb uninstall com.last.app`)
-
----
-
-## 10. 버전 이력
-
-| Version | DB | versionCode | 주요 변경 |
-|---------|-----|-------------|-----------|
-| v1.0 | v5 | 1 | MVVM + Flow + 트랜잭션 |
-| v1.2 | v6 | 2 | FGS · 장치매칭 · POWER 분리 |
-| v1.4 | v9 | 3 | 대시보드 개편 · BT 모니터링 |
-| v2.0 | v10–11 | 4–8 | DSA 인덱스 · 패키지 구조 정리 |
-| v2.0 | v12 | 9–10 | WAL · 부분 인덱스 · ANR 수정 |
-| v2.0 | v13 | 11–12 | DB 캐시 테이블 · DSA/DB 최적화 |
-| v2.0.2 | v14 | 13 | 설정·백업·구조 정리 |
-| **v2.0.3 최종** | **v14** | **14** | **BT 추적 수정 · 파일명/패키지 최적화 · 데드코드 제거** |
-
----
-
-## 11. 최종본 산출물
+## 10. 최종본 산출물
 
 | 항목 | 경로/값 |
 |------|---------|
@@ -327,7 +300,7 @@ cp keystore.properties.example keystore.properties
 
 ---
 
-## 12. 참고 문서
+## 11. 참고 문서
 
 - Analysis Document — Use Case, Domain, UI Prototype
 - Design Document — Class Diagram, Sequence, State Machine, MVVM
