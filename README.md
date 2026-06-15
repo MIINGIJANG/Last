@@ -1,9 +1,28 @@
-# LAST — Last Accessed Smart Tracker
+<p align="center">
 
-Android 기반 USB·Bluetooth 주변기기 분실 방지 앱  
-**개발자:** 장민기 (22212058) · mingijang@yu.ac.kr
+  <img src="assets/Logo.png" width="750">
+
+</p>
+
+| No <img width="10%"> | 22212058 <img width="10%"> |
+| --- | --- |
+| Name | 장민기 |
+| E-mail | mingijang@yu.ac.kr |
 
 ---
+
+# Revision history
+
+| Revision date <img width="10%"> | Version # <img width="10%"> | Description <img width="10%"> | Anthor <img width="10%"> |
+| --- | --- | --- | --- |
+| <img height="50">  |  |  |  |
+| <img height="50"> |  |  |  |
+| <img height="50"> |  |  |  |
+| <img height="50"> |  |  |  |
+| <img height="50"> |  |  |  |
+
+---
+
 
 ## 1. 프로젝트 개요
 
