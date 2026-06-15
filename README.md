@@ -45,25 +45,25 @@ LAST는 등록된 주변기기의 연결 상태를 백그라운드에서 모니�
 ## 2. 시스템 아키텍처
 
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│  Presentation (Jetpack Compose)                                  │
-│  presentation/app/ — MainActivity · LastApp · KeepAliveTab         │
-│  presentation/ — Dashboard · Device · History · Location · Settings│
-│       ↕ ViewModel (StateFlow)                                    │
-│  LastRepository (Flow shareIn + Transaction + Index + Cache)     │
-└──────────────────────────┬───────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│  Presentation (Jetpack Compose)                                     │
+│  presentation/app/ — MainActivity · LastApp · KeepAliveTab          │
+│  presentation/ — Dashboard · Device · History · Location · Settings │
+│       ↕ ViewModel (StateFlow)                                       │
+│  LastRepository (Flow shareIn + Transaction + Index + Cache)        │
+└──────────────────────────┬──────────────────────────────────────────┘
                            │
-┌──────────────────────────▼───────────────────────────────────────┐
-│  Domain                                                          │
-│  index/ · history/ · location/ · util/ · model/                  │
-└──────────────────────────┬───────────────────────────────────────┘
+┌──────────────────────────▼──────────────────────────────────────────┐
+│  Domain                                                             │
+│  index/ · history/ · location/ · util/ · model/                     │
+└──────────────────────────┬──────────────────────────────────────────┘
                            │
-┌──────────────────────────▼───────────────────────────────────────┐
-│  Data (Room v14) · External · Infrastructure                     │
-│  repository/ · entity/ · dao/ · database/                        │
-│  external/ — system · device · location                          │
-│  infrastructure/ — Service · monitoring · platform               │
-└──────────────────────────────────────────────────────────────────┘
+┌──────────────────────────▼──────────────────────────────────────────┐
+│  Data (Room v14) · External · Infrastructure                        │
+│  repository/ · entity/ · dao/ · database/                           │
+│  external/ — system · device · location                             │
+│  infrastructure/ — Service · monitoring · platform                  │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
 ### 상태 머신 (ConnectionMonitor)
