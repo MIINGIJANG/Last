@@ -286,7 +286,7 @@ cp keystore.properties.example keystore.properties
 
 ---
 
-## 10. 최종본 산출물
+## 9. 최종본 산출물
 
 | 항목 | 경로/값 |
 |------|---------|
@@ -300,7 +300,7 @@ cp keystore.properties.example keystore.properties
 
 ---
 
-## 11. 참고 문서
+## 10. 참고 문서
 
 - Analysis Document — Use Case, Domain, UI Prototype
 - Design Document — Class Diagram, Sequence, State Machine, MVVM
